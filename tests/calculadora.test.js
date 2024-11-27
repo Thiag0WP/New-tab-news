@@ -1,3 +1,11 @@
-test("espero que 1 seja 1", () => {
-    expect(2).toBe(1);
+const calculadora = require("../models/calculadora.js");
+
+test("somar 2 + 2 deveria retornar 4", () => {
+    const resultado = calculadora.somar(2, 2);
+    expect(resultado).toBe(4);
+});
+
+test("somar 2 + 2 deveria retornar 4", () => {
+    const resultado = calculadora.somar(68, 82);
+    expect(resultado).toBe(150);
 });
